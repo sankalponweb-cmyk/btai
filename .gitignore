@@ -1,0 +1,13 @@
+backend/.env
+frontend/.env
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+dist/
+.vite/
+*.egg-info/
+.eggs/
+venv/
+.venv/
+bt-ai-fcee0-firebase-adminsdk-fbsvc-f33095f821.json
