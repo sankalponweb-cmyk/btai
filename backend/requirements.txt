@@ -8,5 +8,6 @@ yfinance
 pandas
 numpy
 pyarrow
+lxml
 firebase-admin
 razorpay
