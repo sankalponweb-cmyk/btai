@@ -149,10 +149,8 @@ def _check_credits(user: dict):
             status_code=402,
             detail={
                 "headline": "No credits remaining",
-                "detail": "You've used all your backtesting credits.",
-                "suggestion": "Buy a pack to continue — 5 backtests for just ₹499.",
-                "cta": "Buy Credits",
-                "cta_href": "/buy-credits",
+                "detail": "You've used all your free beta credits.",
+                "suggestion": "Thank you for testing! Reach out to us for more credits.",
             },
         )
 
@@ -279,9 +277,8 @@ async def backtest(
         if "no_credits" in str(e):
             raise HTTPException(status_code=402, detail={
                 "headline": "Out of credits",
-                "detail": "You have no credits remaining.",
-                "suggestion": "Buy a pack to continue — 5 backtests for just ₹499.",
-                "cta": "Buy Credits",
+                "detail": "You've used all your free beta credits.",
+                "suggestion": "Thank you for testing! Reach out to us for more credits.",
             })
         print(f"[ERROR] _deduct_credit_and_save failed for {user['id']}: {e}", flush=True)
     except Exception as e:

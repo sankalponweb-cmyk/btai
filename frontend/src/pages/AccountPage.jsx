@@ -139,26 +139,6 @@ export default function AccountPage() {
           </div>
         </div>
 
-        {/* Buy more CTA */}
-        <button
-          onClick={() => navigate('/buy-credits')}
-          style={{
-            width: '100%',
-            padding: '14px 0',
-            borderRadius: 12,
-            border: 'none',
-            background: 'linear-gradient(135deg, #38bdf8, #818cf8)',
-            color: '#fff',
-            fontFamily: 'inherit',
-            fontWeight: 600,
-            fontSize: 15,
-            cursor: 'pointer',
-            marginBottom: 40,
-            boxShadow: '0 4px 20px rgba(56,189,248,0.2)',
-          }}
-        >
-          Buy More Credits →
-        </button>
 
         {/* Backtest history */}
         <div>

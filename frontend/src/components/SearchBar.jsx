@@ -289,24 +289,9 @@ export default function SearchBar({ onSubmit, loading, credits }) {
           {/* Action row */}
           <div style={{ padding: '10px 14px 14px' }}>
             {noCredits ? (
-              <button
-                onClick={() => navigate('/buy-credits')}
-                style={{
-                  width: '100%',
-                  padding: '13px 0',
-                  borderRadius: 10,
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontFamily: "'Space Grotesk', sans-serif",
-                  fontWeight: 600,
-                  fontSize: 15,
-                  background: 'linear-gradient(135deg, #38bdf8, #818cf8)',
-                  color: '#ffffff',
-                  boxShadow: '0 4px 20px rgba(56,189,248,0.3)',
-                }}
-              >
-                Buy Credits to Run Backtest →
-              </button>
+              <p style={{ fontSize: 13, color: '#8b949e', textAlign: 'center', padding: '10px 0', margin: 0 }}>
+                You've used your free beta credits — thank you for testing!
+              </p>
             ) : (
               <button
                 onClick={handleSubmit}
